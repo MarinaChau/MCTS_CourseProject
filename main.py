@@ -1,9 +1,11 @@
-#----------------------------------------------------------------------------------------------
-# Monte Carlo Tree Search Algorithm Applied to Industrial Scheduling
-# Application developed by Bruno Schrappe as a term project for
-# SCS_3547_006 Intelligent Agents and Reinforcement Learning - Prof. Larry Simon - August 2020
-#----------------------------------------------------------------------------------------------
+"""
+MONTE CARLO PROJECT
 
+Marina CHAU, Alice BUSNEL
+"""
+
+
+## Standard libraries
 import json
 import copy
 import time
@@ -16,8 +18,9 @@ from tkinter.filedialog import askopenfilename
 from tkinter import messagebox
 import math
 
-from mctsmodules import helpers
-from mctsmodules.scheduling import MCTSnode, MCTSnodeUCT, MCTStree
+## Third-party libraries
+from src import helpers
+from src.scheduling import MCTSnode, MCTSnodeUCT, MCTStree
 
 # Variables with global scope
 tasks = []
